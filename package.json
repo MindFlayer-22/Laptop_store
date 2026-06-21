@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/MindFlayer-22/Laptop_store/issues"
   },
-  "homepage": "https://github.com/MindFlayer-22/Laptop_store#readme"
+  "homepage": "https://github.com/MindFlayer-22/Laptop_store#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
 }
