@@ -47,54 +47,27 @@
         </div>
 
         <main class="product-section">
-            <div class="product-grid">
-                
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=500" alt="Laptop">
-                    </div>
-                    <h3 class="product-title">ASUS Zenbook 14 (UX3405)</h3>
-                    <div class="card-buttons">
-                        <button class="btn-enquire">Enquire Now</button>
-                        <button class="btn-know">Know More</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=500" alt="Laptop">
-                    </div>
-                    <h3 class="product-title">ROG Strix SCAR 16 (2025)</h3>
-                    <div class="card-buttons">
-                        <button class="btn-enquire">Enquire Now</button>
-                        <button class="btn-know">Know More</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=500" alt="Laptop">
-                    </div>
-                    <h3 class="product-title">ASUS ProArt PX13 (HN7306)</h3>
-                    <div class="card-buttons">
-                        <button class="btn-enquire">Enquire Now</button>
-                        <button class="btn-know">Know More</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=500" alt="Laptop">
-                    </div>
-                    <h3 class="product-title">ASUS Vivobook 16</h3>
-                    <div class="card-buttons">
-                        <button class="btn-enquire">Enquire Now</button>
-                        <button class="btn-know">Know More</button>
-                    </div>
-                </div>
+            <div id="product-container" class="product-grid"> 
 
             </div>
         </main>
+    </div>
+    
+    <div id="compare-bar" style="position: fixed; bottom: -100px; left: 50%; transform: translateX(-50%); background: #222; color: white; padding: 15px 30px; border-radius: 30px; display: flex; align-items: center; gap: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: bottom 0.3s ease; z-index: 999;">
+        <span id="compare-count">0 items selected to compare</span>
+        <button id="open-compare-btn" style="background: #007bff; color: white; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-weight: bold;">View Comparison</button>
+    </div>
+
+    <div id="compare-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(5px);">
+        <div style="background: white; color: #333; width: 90%; max-width: 900px; max-height: 85vh; border-radius: 12px; padding: 30px; position: relative; overflow-y: auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+            
+            <button id="close-compare-btn" style="position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 28px; cursor: pointer; color: #666;">&times;</button>
+            
+            <h2 style="margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">Product Comparison</h2>
+            
+            <div id="compare-grid" style="display: flex; gap: 20px; justify-content: flex-start; overflow-x: auto; padding-bottom: 15px;">
+                </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
